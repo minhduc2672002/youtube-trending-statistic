@@ -1,0 +1,6 @@
+vào thư mực data
+#Copy toàn bộ file json vào
+aws s3 cp . s3://de-on-youtube-raw-ap-southeast-1-dev-youtube/youtube/raw_statistics_reference_data/ --recursive --exclude "*" --include "*.json"
+
+aws s3 cp US_youtube_trending_data.csv s3://de-on-youtube-raw-ap-southeast-1-dev-youtube/youtube/raw_statistics/region=us/
+
